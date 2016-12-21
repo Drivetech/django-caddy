@@ -1,0 +1,10 @@
+0.0.0.0:80
+{
+  proxy / django:{$PORT} {
+    proxy_header Host {host}
+    proxy_header X-Forwarded-Proto {scheme}
+    except /media /static
+  }
+
+  root /var/www
+}
