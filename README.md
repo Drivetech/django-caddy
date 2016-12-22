@@ -16,6 +16,7 @@ Supported tags and respective Dockerfile links
 ```bash
 docker create volume --name static
 docker create volume --name media
+docker create volume --name logs
 docker run -d --name django -v static:/path/to/static -v media:/path/to/media -e PORT 8000 your-django-image-with-gunicorn
-docker run -d --name caddy --link django:django -v static:/var/www/static -v media:/var/www/media -e PORT 8000 lgatica/django-caddy
+docker run -d --name caddy --link django:django -v static:/var/www/static -v media:/var/www/media -v logs:/var/log -e PORT 8000 lgatica/django-caddy
 ```
