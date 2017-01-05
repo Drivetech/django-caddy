@@ -1,8 +1,6 @@
 # django-caddy
 
-[![Image Layers](https://images.microbadger.com/badges/image/lgatica/django-caddy.svg)](http://microbadger.com/images/lgatica/django-caddy)
-[![Docker Stars](https://img.shields.io/docker/stars/lgatica/django-caddy.svg)](https://hub.docker.com/r/lgatica/django-caddy/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/lgatica/django-caddy.svg)](https://hub.docker.com/r/lgatica/django-caddy/)
+[![dockeri.co](http://dockeri.co/image/lgatica/django-caddy)](https://registry.hub.docker.com/lgatica/django-caddy/)
 
 > Docker Image for reverse proxy django apps with caddyserver and alpine linux
 
