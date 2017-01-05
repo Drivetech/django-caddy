@@ -1,6 +1,6 @@
 # django-caddy
 
-[![dockeri.co](http://dockeri.co/image/lgatica/django-caddy)](https://registry.hub.docker.com/lgatica/django-caddy/)
+[![dockeri.co](http://dockeri.co/image/lgatica/django-caddy)](https://hub.docker.com/r/lgatica/django-caddy/)
 
 > Docker Image for reverse proxy django apps with caddyserver and alpine linux
 
