@@ -1,20 +1,14 @@
+---
 sudo: required
 
 services:
   - docker
 
 env:
-  matrix :
-    - env:
-      VERSION: '0.9.5'
-      LATEST: 'latest'
-    - env:
-      VERSION: '0.9.4'
-    - env:
-      VERSION: '0.9.3'
+  - VERSION=0.10.0
 
 install:
-  - docker build -t "lgatica/django-caddy:$VERSION" "$VERSION"
+  - docker build -t "lgatica/django-caddy:$VERSION" -t lgatica/django-caddy:latest .
 
 script:
   - docker run --rm "lgatica/django-caddy:$VERSION" --version
@@ -22,7 +16,4 @@ script:
 after_success:
   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
   - docker push "lgatica/django-caddy:$VERSION"
-  - if [ "$LATEST" == "latest" ]; then
-    docker tag "lgatica/django-caddy:$VERSION" "lgatica/django-caddy:latest";
-    docker push "lgatica/django-caddy:latest";
-    fi
+  - docker push lgatica/django-caddy:latest

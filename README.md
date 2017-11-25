@@ -8,9 +8,7 @@
 
 Supported tags and respective Dockerfile links
 
-- 0.9.5, latest ([0.9.5/Dockerfile](https://github.com/lgaticaq/django-caddy/blob/master/0.9.5/Dockerfile))
-- 0.9.4 ([0.9.4/Dockerfile](https://github.com/lgaticaq/django-caddy/blob/master/0.9.4/Dockerfile))
-- 0.9.3 ([0.9.3/Dockerfile](https://github.com/lgaticaq/django-caddy/blob/master/0.9.3/Dockerfile))
+- 0.10.0, latest ([Dockerfile](https://github.com/lgaticaq/django-caddy/blob/master/Dockerfile))
 
 ## Instructions
 
