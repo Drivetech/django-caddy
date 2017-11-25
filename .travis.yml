@@ -5,7 +5,7 @@ services:
   - docker
 
 env:
-  - VERSION=0.10.0
+  - VERSION=0.10.1
 
 install:
   - docker build -t "lgatica/django-caddy:$VERSION" -t lgatica/django-caddy:latest .
