@@ -1,10 +1,10 @@
 FROM alpine:3.6@sha256:d6bfc3baf615dc9618209a8d607ba2a8103d9c8a405b3bd8741d88b4bef36478
 
 LABEL maintainer="Leonardo Gatica <lgatica@protonmail.com>" \
-      caddy_version="0.10.6" \
+      caddy_version="0.10.7" \
       architecture="amd64"
 
-ENV PORT=8000 CADDY_VERSION=0.10.6 CADDY_ARCHITECTURE=amd64
+ENV PORT=8000 CADDY_VERSION=0.10.7 CADDY_ARCHITECTURE=amd64
 
 RUN apk add --no-cache openssh-client git tar curl
 
