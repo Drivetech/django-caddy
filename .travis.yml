@@ -13,7 +13,12 @@ install:
 script:
   - docker run --rm "lgatica/django-caddy:$VERSION" --version
 
-after_success:
+before_deploy:
   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-  - docker push "lgatica/django-caddy:$VERSION"
-  - docker push lgatica/django-caddy:latest
+
+deploy:
+  provider: script
+  script: docker push "lgatica/django-caddy:$VERSION" && docker push lgatica/django-caddy:latest
+  skip_cleanup: true
+  on:
+    branch: master
