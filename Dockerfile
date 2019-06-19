@@ -1,4 +1,4 @@
-FROM alpine:3.7@sha256:02c076fdbe7d116860d9fb10f856ed6753a50deecb04c65443e2c6388d97ee35
+FROM alpine:3.7@sha256:8421d9a84432575381bfabd248f1eb56f3aa21d9d7cd2511583c68c9b7511d10
 
 LABEL maintainer="Leonardo Gatica <lgatica@protonmail.com>" \
       caddy_version="0.10.12" \
